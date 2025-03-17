@@ -1,0 +1,525 @@
+
+       /* General Styles */
+body {
+    background-color: #fefaf5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General Styles */
+body {
+    background-color: #fefaf5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand span {
+    color: #f4a261;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f4a261 !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 22px;
+    cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .icons {
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+    }
+}
+
+
+
+        .hero-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .hero-content {
+            position: absolute;
+            left: 15%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            max-width: 500px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+        .hero-content h1 {
+            color: #f89d2a;
+            font-weight: bold;
+        }
+        .hero-btn {
+            background-color: #f89d2a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .hero-btn:hover {
+            background-color: #e68a20;
+        }
+        .hero-image {
+            background: url('Images/Rectangle\ 87.png') no-repeat center center/cover ;
+            position: absolute;
+            width: 50%;
+            margin-left: 30%;
+            height: auto;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .hero-content {
+                left: 5%;
+                max-width: 350px;
+                padding: 20px;
+            }
+            .hero-section {
+                height: 80vh;
+            }
+        }
+        @media (max-width: 576px) {
+            .hero-content {
+                position: relative;
+                left: 0;
+                max-width: 100%;
+                text-align: center;
+                padding: 15px;
+            }
+            .hero-section {
+                flex-direction: column;
+                height: auto;
+            }
+            .hero-image {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+/* General Styles */
+.companies-section {
+    padding: 50px 0;
+    background-color: #fefaf5; /* Light beige background */
+}
+
+.trusted-text {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Logos */
+.company-logo img {
+    max-width: 120px;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.company-logo img:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .company-logo img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-logo img {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .trusted-text {
+        font-size: 16px;
+    }
+    .company-logo img {
+        max-width: 70px;
+    }
+}
+
+/* General Styles */
+.interiors-section {
+    padding: 50px 0;
+    background: #fefaf5;
+    
+}
+
+.section-title {
+    color: #333;
+white-space: pre;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+/* Room Cards */
+.room-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.room-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.room-card h5 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.room-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.room-card a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.room-card a:hover {
+    color: #f89d2a;
+}
+.room-card a span{
+    color: #f77;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.room-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .room-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .room-card img {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .room-card {
+        padding: 15px;
+    }
+    .room-card h5 {
+        font-size: 16px;
+    }
+    .room-card p {
+        font-size: 12px;
+    }
+    .room-card img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* General Styling */
+body {
+    background-color: #fefaf5;
+    font-family: 'Arial', sans-serif;
+}
+
+.products-section {
+    padding: 50px 0;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-description {
+    color: #666;
+    word-spacing: 12px;
+    margin-bottom: 20px;
+}
+
+/* Product Card Styling */
+.product-card {
+    background: #fff3e6;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.product-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    color: #ff8c42;
+    cursor: pointer;
+}
+
+.product-card img {
+    display: block;
+    margin: 20px auto;
+}
+
+.product-card h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.price-tag {
+    display: inline-block;
+    background: #ff8c42;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .product-card {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-category, .cart-icon {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card img {
+        width: 80px;
+    }
+
+    .price-tag {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .product-card h5 {
+        font-size: 14px;
+    }
+}
+
+/* General Styling */
+body {
+    background-color: #fefaf5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Section */
+.footer-section {
+    background: url(Images/Asset\ 2@4x\ 1.png)   #e4b97d;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    color: #fff;
+
+}
+
+/* Heading & Text */
+.footer-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #f8f8f8;
+    max-width: 450px;
+}
+
+/* Subscription Form */
+.subscribe-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subscribe-form .form-control {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.btn-subscribe {
+    background: #ff8c42;
+    font-size: 14px;
+    font-weight: bold;
+    height: 60px;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border: 5px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-subscribe:hover {
+    background: #e07635;
+}
+
+/* Horizontal Line */
+.footer-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+}
+
+/* Copyright & Links */
+.copyright {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .subscribe-form {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    .subscribe-form .form-control {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn-subscribe {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .footer-line {
+        margin: 30px 0;
+    }
+
+    .copyright,
+    .footer-link {
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+    }
+}
